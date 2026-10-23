@@ -22,6 +22,7 @@ public class FireReaction : MonoBehaviour
 
     void Start()
     {
+
         if (fireParticles != null)
         {
             fireEmission = fireParticles.emission;
@@ -102,6 +103,11 @@ public class FireReaction : MonoBehaviour
             {
                 if (fireParticles.isPlaying) fireParticles.Stop();
                 if (fireAudio != null && fireAudio.isPlaying) fireAudio.Stop();
+
+                if (FireManager.Instance != null)
+                {
+                    FireManager.Instance.ReportFireExtinguished(this);
+                }
 
                 // Optional: Hide the health bar when the fire is completely out
                 if (healthBarSlider != null)
