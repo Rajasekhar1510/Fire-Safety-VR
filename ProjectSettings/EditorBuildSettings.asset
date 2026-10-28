@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/main scene 3.unity
     guid: 27c9ff087dee9274fb79ec3eb54830af
+  - enabled: 1
+    path: Assets/Scenes/main scene no walking.unity
+    guid: 4b9033d8290627d4e976c83a87371ac0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: b39d807b8d6d2444bbd7b42e1eb53796, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ada6d6810093d4940a82d01b1cc9e421, type: 2}
